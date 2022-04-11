@@ -8,5 +8,10 @@ namespace EntityFrameworkLesson.model
 {
     internal class Group
     {
+        public int Id { get; set; }
+        public string Title { get; set; }
+        public int PerformerId { get; set; }
+        public int SongId { get; set; }
+        public string Genre { get; set; }
     }
 }
