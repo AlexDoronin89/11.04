@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alex\\source\\repos\\EntityFrameworkLesson\\EntityFrameworkLesson\\EntityFrameworkLesson.csproj": {}
+    "C:\\Users\\Alex\\Source\\Repos\\11.04\\EntityFrameworkLesson\\EntityFrameworkLesson.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alex\\source\\repos\\EntityFrameworkLesson\\EntityFrameworkLesson\\EntityFrameworkLesson.csproj": {
+    "C:\\Users\\Alex\\Source\\Repos\\11.04\\EntityFrameworkLesson\\EntityFrameworkLesson.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alex\\source\\repos\\EntityFrameworkLesson\\EntityFrameworkLesson\\EntityFrameworkLesson.csproj",
+        "projectUniqueName": "C:\\Users\\Alex\\Source\\Repos\\11.04\\EntityFrameworkLesson\\EntityFrameworkLesson.csproj",
         "projectName": "EntityFrameworkLesson",
-        "projectPath": "C:\\Users\\Alex\\source\\repos\\EntityFrameworkLesson\\EntityFrameworkLesson\\EntityFrameworkLesson.csproj",
+        "projectPath": "C:\\Users\\Alex\\Source\\Repos\\11.04\\EntityFrameworkLesson\\EntityFrameworkLesson.csproj",
         "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alex\\source\\repos\\EntityFrameworkLesson\\EntityFrameworkLesson\\obj\\",
+        "outputPath": "C:\\Users\\Alex\\Source\\Repos\\11.04\\EntityFrameworkLesson\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -42,19 +42,19 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.3, )"
+              "version": "[6.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.3, )"
+              "version": "[6.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.3, )"
+              "version": "[6.0.1, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",

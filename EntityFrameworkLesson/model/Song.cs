@@ -10,6 +10,8 @@ namespace EntityFrameworkLesson.model
     {
         public int Id { get; set; }
         public int GroupId { get; set; }
+        public string Title { get; set; }
+        public virtual ICollection<Group> Groups{ get; set; }
         public DateTime CreateTime { get; set; }
     }
 }
