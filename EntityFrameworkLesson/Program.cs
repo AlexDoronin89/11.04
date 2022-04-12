@@ -10,84 +10,105 @@ namespace EntityFrameworkLesson
     {
         static void Main(string[] args)
         {
-
+            int userChoose;
+            Console.WriteLine("1 C 2 R 3 U 4D");
+            userChoose = int.Parse(Console.ReadLine());
+            
+            switch (userChoose)
+            {
+                case 1:
             #region Insert
+            
+
             using (GroupDbContext db = new GroupDbContext())
             {
+                
                 Performer performer = new Performer { Name = "Моргенштерн", Birthday = DateTime.Parse("1580-03-01") };
-                Song song = new Song {Title="Селяви", CreateTime=DateTime.Parse("2022-04-02") };
-                db.Songs.Add(song);
-                db.Performers.Add(performer);
+                Song song = new Song { Title = "Селяви", Create_Time = DateTime.Parse("2022-04-02") };
+                db.Song.Add(song);
+                db.Performer.Add(performer);
                 db.SaveChanges();
 
-                List<Group> groups = db.Groups.Include(g=>g.Performer).Include(s=>s.Song).ToList();
+                List<Group> groups = db.Group.Include(g => g.Performer).Include(s => s.Song).ToList();
                 {
-                    new Group { Title = "Мастер и Маргарита", CreateTime = DateTime.Parse("1900-01-12"), PerfomerId = performer.Id, Genre = "Хип-хоп", SongId = song.Id };
+                    new Group { Title = "Мастер и Маргарита", Create_Time = DateTime.Parse("1900-01-12"), Perfomer_Id = performer.Id, Genre = "Хип-хоп", Song_Id = song.Id };
                 };
 
-                db.Groups.AddRange(groups);
+                db.Group.AddRange(groups);
                 db.SaveChanges();
 
-                Console.WriteLine($"Group {groups[0].Title},{groups[0].Genre} ID {groups[0].Id} CreateTime {groups[0].CreateTime} Performer {groups[0].Performer.Name} Song {groups[0].Song.Title}");
+                Console.WriteLine($"Group {groups[0].Title},{groups[0].Genre} ID {groups[0].Id} CreateTime {groups[0].Create_Time} Performer {groups[0].Performer.Name} Song {groups[0].Song.Title}");
             }
             #endregion
-
-
+                    break;
+                case 2:
             #region Select
             using (GroupDbContext db = new GroupDbContext())
             {
-                List<Group> groups = db.Groups.ToList();
+                List<Group> groups = db.Group.ToList();
 
                 foreach (var item in groups)
                 {
-                    Console.WriteLine($"Group {item.Title},{item.Genre} ID {item.Id} CreateTime {item.CreateTime} Performer {item.PerfomerId} Song {item.SongId}");
+                    Console.WriteLine($"Group {item.Title},{item.Genre} ID {item.Id} CreateTime {item.Create_Time} Performer {item.Perfomer_Id} Song {item.Song_Id}");
                 }
             }
             #endregion
-
+                    break;
+                case 3:
             #region Update
             using (GroupDbContext db = new GroupDbContext())
             {
-                Group group = db.Groups.FirstOrDefault(i => i.Id == 1);
+                Group group = db.Group.FirstOrDefault(i => i.Id == 1);
 
                 if (group != null)
                 {
-                    group.CreateTime = DateTime.Parse("1900-01-12");
-                    db.Groups.Update(group);
+                    group.Create_Time = DateTime.Parse("1900-01-12");
+                    db.Group.Update(group);
                     db.SaveChanges();
 
-                    List<Group> groups = db.Groups.ToList();
+                    List<Group> groups = db.Group.ToList();
 
                     Console.WriteLine("\nПосле обновления:");
                     foreach (var item in groups)
                     {
-                        Console.WriteLine($"Group {item.Title},{item.Genre} ID {item.Id} CreateTime {item.CreateTime} Performer {item.PerfomerId} Song {item.SongId}");
+                        Console.WriteLine($"Group {item.Title},{item.Genre} ID {item.Id} CreateTime {item.Create_Time} Performer {item.Perfomer_Id} Song {item.Song_Id}");
                     }
                 }
             }
             #endregion
-
+                    break;
+                case 4:
             #region Delete
             using (GroupDbContext db = new GroupDbContext())
             {
-                Group group = db.Groups.FirstOrDefault(i => i.Id == 2);
+                Group group = db.Group.FirstOrDefault(i => i.Id == 2);
 
                 if (group != null)
                 {
-                    db.Groups.Remove(group);
+                    db.Group.Remove(group);
                     db.SaveChanges();
 
-                    List<Group> groups = db.Groups.ToList();
+                    List<Group> groups = db.Group.ToList();
 
                     Console.WriteLine("\nПосле удаления:");
                     foreach (var item in groups)
                     {
-                        Console.WriteLine($"Group {item.Title} ID {item.Id} CreateTime {item.CreateTime} Performer {item.PerfomerId} Song {item.SongId}");
+                        Console.WriteLine($"Group {item.Title} ID {item.Id} CreateTime {item.Create_Time} Performer {item.Perfomer_Id} Song {item.Song_Id}");
                     }
                 }
             }
             #endregion
+                    break;
+                default:
+                    break;
+            }
+
+
+
 
         }
+
+
+
     }
 }

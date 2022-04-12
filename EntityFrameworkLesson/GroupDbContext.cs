@@ -9,9 +9,9 @@ namespace EntityFrameworkLesson.model
 {
     internal class GroupDbContext : DbContext
     {
-        public DbSet<Group> Groups { get; set; }
-        public DbSet<Performer> Performers { get; set; }
-        public DbSet<Song> Songs { get; set; }
+        public DbSet<Group> Group { get; set; }
+        public DbSet<Performer> Performer { get; set; }
+        public DbSet<Song> Song { get; set; }
 
         public GroupDbContext()
         {
@@ -20,7 +20,7 @@ namespace EntityFrameworkLesson.model
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySql("Server=localhost;User=root;Password=1234;Database=entity_framework_lesson", new MySqlServerVersion(new Version()));
+            optionsBuilder.UseMySql("Server=localhost;User=root;Password=1234;Database=zxc", new MySqlServerVersion(new Version()));
         }
             
     }

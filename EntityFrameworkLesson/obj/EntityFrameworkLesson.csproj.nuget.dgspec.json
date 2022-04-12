@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alex\\Source\\Repos\\11.04\\EntityFrameworkLesson\\EntityFrameworkLesson.csproj": {}
+    "C:\\Users\\Alex\\source\\repos\\11.04\\EntityFrameworkLesson\\EntityFrameworkLesson.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alex\\Source\\Repos\\11.04\\EntityFrameworkLesson\\EntityFrameworkLesson.csproj": {
+    "C:\\Users\\Alex\\source\\repos\\11.04\\EntityFrameworkLesson\\EntityFrameworkLesson.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alex\\Source\\Repos\\11.04\\EntityFrameworkLesson\\EntityFrameworkLesson.csproj",
+        "projectUniqueName": "C:\\Users\\Alex\\source\\repos\\11.04\\EntityFrameworkLesson\\EntityFrameworkLesson.csproj",
         "projectName": "EntityFrameworkLesson",
-        "projectPath": "C:\\Users\\Alex\\Source\\Repos\\11.04\\EntityFrameworkLesson\\EntityFrameworkLesson.csproj",
+        "projectPath": "C:\\Users\\Alex\\source\\repos\\11.04\\EntityFrameworkLesson\\EntityFrameworkLesson.csproj",
         "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alex\\Source\\Repos\\11.04\\EntityFrameworkLesson\\obj\\",
+        "outputPath": "C:\\Users\\Alex\\source\\repos\\11.04\\EntityFrameworkLesson\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
