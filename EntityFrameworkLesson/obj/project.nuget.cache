@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PjTBvdv9vDB1fbSpzyp0Zn4TmUcfC4Q8iu+QR2wA+aXPaor4QkHwXmlaV0mRO1cl6v/jCG6L57ywOFKzePcTdQ==",
+  "dgSpecHash": "fSGoEHz6e8J97rJJOoEg5YqhuoaRpg4KcZI4SKkpUx3RdKeGSPPqHzHptjyxiliBgEMghAL9NO+hs/sP5T0+wQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alex\\source\\repos\\11.04\\EntityFrameworkLesson\\EntityFrameworkLesson.csproj",
+  "projectFilePath": "C:\\Users\\Alex\\source\\repos\\EntityFrameworkLesson\\EntityFrameworkLesson\\EntityFrameworkLesson.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alex\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.1\\microsoft.entityframeworkcore.6.0.1.nupkg.sha512",
